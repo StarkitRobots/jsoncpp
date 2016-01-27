@@ -7,5 +7,5 @@
         "make"
     ],
     "includes": "include",
-    "libraries": "build"
+    "libraries": "build/src/lib_json"
 }
