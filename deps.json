@@ -8,5 +8,5 @@
     ],
     "includes": "include",
     "libraries": "build/src/lib_json",
-    "links": "build/src/lib_json/libjsoncpp.a"
+    "links": "build/src/lib_json/libjsoncpp.so"
 }

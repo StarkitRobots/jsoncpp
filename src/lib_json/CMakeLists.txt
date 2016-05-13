@@ -61,7 +61,6 @@ ENDIF()
 
 IF(BUILD_STATIC_LIBS)
     ADD_LIBRARY(jsoncpp_lib_static STATIC ${PUBLIC_HEADERS} ${jsoncpp_sources})
-    ADD_LIBRARY(rhoban_jsoncpp STATIC ${PUBLIC_HEADERS} ${jsoncpp_sources})
     SET_TARGET_PROPERTIES( jsoncpp_lib_static PROPERTIES VERSION ${JSONCPP_VERSION} SOVERSION ${JSONCPP_VERSION_MAJOR})
     SET_TARGET_PROPERTIES( jsoncpp_lib_static PROPERTIES OUTPUT_NAME jsoncpp
                            DEBUG_OUTPUT_NAME jsoncpp${DEBUG_LIBNAME_SUFFIX} )
