@@ -2,6 +2,16 @@
 
 CMAKE_MINIMUM_REQUIRED(VERSION 2.8.5)
 PROJECT(jsoncpp)
+
+# Find catkin macros and libraries
+find_package(catkin)
+
+# What is published by the 'jsoncpp package'
+catkin_package(
+  INCLUDE_DIRS include
+  LIBRARIES jsoncpp
+)
+
 ENABLE_TESTING()
 
 OPTION(JSONCPP_WITH_TESTS "Compile and (for jsoncpp_check) run JsonCpp test executables" ON)
